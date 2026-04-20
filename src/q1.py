@@ -1,4 +1,7 @@
 def swap(x, y):
+    
+    x = str("Hello World")
+    y = int(100)
     """
     Task 1
     - Create a function that would swap the value of x and y using only x and y as variables.
@@ -6,6 +9,8 @@ def swap(x, y):
     - Return -1 if x and y is not numeric, and
     - print the swapped values if both x and y are numeric.
     """
+
+    
     return
 
 
