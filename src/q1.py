@@ -1,15 +1,23 @@
 def swap(x, y):
-    """
-    Task 1
-    - Create a function that would swap the value of x and y using only x and y as variables.
-    - x and y must be numeric.
-    - Return -1 if x and y is not numeric, and
-    - print the swapped values if both x and y are numeric.
-    """
-    return
 
+    if isinstance(x, (int, float)) and isinstance(y, (int, float)):
 
-# Task 2
-# Invoke the function "swap" using the following scenarios:
-# - "Apple", 10
-# - 9, 17
+        x = x + y
+        y = x - y
+        x = x - y
+        print(f"The swapped values are: x = {x}, y = {y}")
+   
+    else:
+
+        print("Error: Both x and y must be numeric values.")
+        return -1
+
+print("--- Invoking swap('Apple', 10) ---")
+result_scenario_1 = swap("Apple", 10)
+print(f"Function returned: {result_scenario_1}")
+print("-" * 30)
+
+print("--- Invoking swap(9, 17) ---")
+result_scenario_2 = swap(9, 17)
+print(f"Function returned: {result_scenario_2}")
+print("-" * 30)
